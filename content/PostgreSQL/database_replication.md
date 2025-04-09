@@ -1,4 +1,3 @@
-```
 ---
 title: "Database Replication"
 draft: false
@@ -7,7 +6,6 @@ tags:
   - Azure
   - PostgreSQL
 ---
-```
 ## AWS (Block Level Replication)
 
 Block-level replication in PostgreSQL on AWS refers to a replication mechanism that operates at the physical level, transferring changes from the source database to replicas using Write-Ahead Logs (WAL). This method is commonly employed in Amazon RDS for PostgreSQL and is technically known as _physical replication_. Here's how it works:
