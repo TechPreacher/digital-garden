@@ -1,4 +1,3 @@
-```
 ---
 title: "PostgreSQL Hosting Options"
 draft: false
@@ -7,7 +6,6 @@ tags:
   - Azure
   - PostgreSQL
 ---
-```
 ## Azure Database for PostgreSQL vs. Azure Cosmos DB for PostgreSQL
 
 Microsoft Azure offers two distinct managed PostgreSQL services: Azure Database for PostgreSQL and Azure Cosmos DB for PostgreSQL. Each service is designed for specific use cases and architectures. Here's a detailed comparison:
@@ -95,10 +93,10 @@ Sources
 [8] Azure Database for PostgreSQL - Flexible Server - Learn Microsoft  
 [https://learn.microsoft.com/de-de/azure/postgresql/flexible-server/overview](https://learn.microsoft.com/de-de/azure/postgresql/flexible-server/overview)
 
-[[Database Replication]]
+[[database_replication]]
 
-[[PostgreSQL on Azure]]
+[[postgresql_on_azure]]
 
-[[Azure Database for PostgreSQL Case Sensitivity]]
+[[postgresql_case_sensitivity]]
 
-[[Azure Database for PostgreSQL Python libraries]]
+[[python_libraries]]
