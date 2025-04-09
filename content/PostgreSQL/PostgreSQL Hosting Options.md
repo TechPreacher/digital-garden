@@ -1,3 +1,13 @@
+```
+---
+title: "PostgreSQL Hosting Options"
+draft: false
+date: "2025-04-08"
+tags:
+  - Azure
+  - PostgreSQL
+---
+```
 ## Azure Database for PostgreSQL vs. Azure Cosmos DB for PostgreSQL
 
 Microsoft Azure offers two distinct managed PostgreSQL services: Azure Database for PostgreSQL and Azure Cosmos DB for PostgreSQL. Each service is designed for specific use cases and architectures. Here's a detailed comparison:

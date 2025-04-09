@@ -1,3 +1,13 @@
+```
+---
+title: "PostgreSQL on Azure"
+draft: false
+date: "2025-04-08"
+tags:
+  - Azure
+  - PostgreSQL
+---
+```
 ## PostgreSQL on Azure
 
 Azure Database for PostgreSQL is a fully managed Database-as-a-Service (DBaaS) solution that supports PostgreSQL workloads. It offers features similar to Aurora, including high availability, scalability, and automated maintenance.
