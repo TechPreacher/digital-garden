@@ -6,5 +6,5 @@ This is a [Digital Garden](https://www.technologyreview.com/2020/09/03/1007716/d
 
 ![[garden_2.png]]
 
-## Content
+## Learning Content
 - [[PostgreSQL]]

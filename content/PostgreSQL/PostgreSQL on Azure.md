@@ -19,7 +19,7 @@ Key Deployment Models for PostgreSQL on Azure:
     • Ideal for large-scale applications requiring distributed database systems  
     
 
-Features Comparable to AWS Aurora:  
+## Features Comparable to AWS Aurora
 • High Availability: Zone-redundant configurations with zero-data-loss failover mechanisms  
 • Scalability: Dynamic scaling for both compute and storage based on workload demands  
 • Automated Maintenance: OS, hardware, and database engine patching with configurable maintenance windows  
