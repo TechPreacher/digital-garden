@@ -1,4 +1,3 @@
-```
 ---
 title: "Azure Database for PostgreSQL Case Sensitivity"
 draft: false
@@ -7,7 +6,6 @@ tags:
   - Azure
   - PostgreSQL
 ---
-```
 ## Azure Databaes for PostgreSQL and Case
 
 Azure Database for PostgreSQL may encounter issues when databases contain multiple tables with names that differ only in case. This occurs because of PostgreSQL's specific identifier handling:

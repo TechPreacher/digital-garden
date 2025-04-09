@@ -1,4 +1,3 @@
-```
 ---
 title: "PostgreSQL"
 draft: false
@@ -7,12 +6,11 @@ tags:
   - Azure
   - PostgreSQL
 ---
-```
 Here I collect my learnings on running PostgreSQL in the cloud.
 
-- [[PostgreSQL on Azure]]
-- [[PostgreSQL Hosting Options]]
-- [[Database Replication]]
-- [[Azure Database for PostgreSQL Python libraries]]
-- [[Azure Database for PostgreSQL Case Sensitivity]]
-- [[Code Samples]]
+- [[postgresql_on_azure]]
+- [[hosting_options]]
+- [[database_replication]]
+- [[python_libraries]]
+- [[postgresql_case_sensitivity]]
+- [[code_samples]]

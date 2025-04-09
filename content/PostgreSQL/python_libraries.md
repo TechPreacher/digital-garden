@@ -1,4 +1,3 @@
-```
 ---
 title: "Azure Database for PostgreSQL Python libraries"
 draft: false
@@ -7,8 +6,6 @@ tags:
   - Azure
   - PostgreSQL
 ---
-```
-
 There are several Python libraries available for accessing Azure Database for PostgreSQL, each suited for different purposes:
 
 ### **Azure SDK for Management**
