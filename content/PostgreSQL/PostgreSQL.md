@@ -14,3 +14,4 @@ Here I collect my learnings on running PostgreSQL in the cloud.
 - [[python_libraries]]
 - [[postgresql_case_sensitivity]]
 - [[code_samples]]
+- [[security_and_authentication]]
