@@ -1,7 +1,7 @@
 ---
-title: "Database Replication"
+title: Database Replication in PostgreSQL
 draft: false
-date: "2025-04-08"
+date: 2025-04-08
 tags:
   - Azure
   - PostgreSQL
