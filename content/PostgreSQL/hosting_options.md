@@ -10,6 +10,7 @@ tags:
 
 Microsoft Azure offers two distinct managed PostgreSQL services: Azure Database for PostgreSQL and Azure Cosmos DB for PostgreSQL. Each service is designed for specific use cases and architectures. Here's a detailed comparison:
 
+
 |   |   |   |
 |---|---|---|
 |**Feature**|**Azure Database for PostgreSQL**|**Azure Cosmos DB for PostgreSQL**|
