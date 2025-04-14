@@ -12,5 +12,3 @@ This is my [Digital Garden](https://www.technologyreview.com/2020/09/03/1007716/
 
 ## Learning Content
 - [[PostgreSQL]]
-
-Hello
