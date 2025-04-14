@@ -6,7 +6,7 @@ tags:
   - Azure
   - PostgreSQL
 ---
-Here I collect my learnings on running PostgreSQL in the cloud.
+Here I collect my learnings on running PostgreSQL in Azure.
 
 ![[PostgreSQL.png]]
 
@@ -17,5 +17,7 @@ Here I collect my learnings on running PostgreSQL in the cloud.
 - [[postgresql_case_sensitivity]] - Azure Databaes for PostgreSQL and Case
 - [[security_and_authentication]] - Security and Authentication Options for Kubernetes Solutions with Azure Database for PostgreSQL Flexible Server
 - [[database_replicaton_performance]] - Database Replication Performance Tests
+- [[replication-perf-azure-aws]] - Performance Comparison: PostgreSQL Replication on AWS Aurora vs Azure Database Flexible Server
+- [[replication_perf_comparison_azure]] - Replication Performance Comparison of PostgreSQL Offerings on Microsoft Azure
 
 - [[code_samples]] - Code samples for this learning project
