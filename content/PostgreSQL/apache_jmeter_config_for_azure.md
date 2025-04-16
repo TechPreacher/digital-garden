@@ -6,7 +6,17 @@ tags:
   - Azure
   - LoadTest
 ---
-## Apache JMeter Configuration
+## Azure DB for PostgreSQL Configuration
+
+![[azure_db_postgresql_config_1.png]]
+
+![[azure_db_postgresql_config_2.png]]
+
+![[azure_db_postgresql_config_3.png]]
+
+![[azure_db_postgresql_config_4.png]]
+
+## Apache JMeter Script
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -205,3 +215,14 @@ ORDER by price DESC
 ![[azure_load_test_6.png]]
 
 ![[azure_load_test_7.png]]
+
+## Azure Load Test Result
+
+In App result:
+
+![[azure_load_test_result.png]]
+
+Azure Load Test PostgreSQL Lag:
+
+![[azure_load_test_lag.png]]
+
