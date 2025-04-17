@@ -25,7 +25,7 @@ Here I collect my learnings on running PostgreSQL in Azure.
 
 ## Azure Load Testing
 - [[troubleshooting_azure_load_testing]] - Troubleshooting Failed Tests in Azure Load Testing with JMeter
-- [[apache_jmeter_config_for_azure]] - Apache JMeter XML configuration for Azure Load Test
+- [[load_test_configuration]] - Apache JMeter XML configuration for Azure Load Test
 
 ## Code Sample
 - [[code_samples]] - Code samples for this learning project
