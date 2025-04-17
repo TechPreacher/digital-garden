@@ -1,5 +1,5 @@
 ---
-title: "Load Test 1: Saturating the System"
+title: "Load Test 2: Timed Testing"
 draft: false
 date: 2025-04-17
 tags:
