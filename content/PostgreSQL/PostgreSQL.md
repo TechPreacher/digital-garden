@@ -37,7 +37,21 @@ Here I collect my learnings on running PostgreSQL in Azure.
 
 - [[code_samples]] - Code samples for this learning project
 
-## Links
+## Mirroring for Azure Database for PostgreSQL in Fabric
+
+- [Announcing Mirroring for Azure Database for PostgreSQL in Microsoft Fabric for Public Preview](https://techcommunity.microsoft.com/blog/adforpostgresql/announcing-mirroring-for-azure-database-for-postgresql-in-microsoft-fabric-for-p/4396750)
+- [Mirroring Azure Database for PostgreSQL flexible server](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/azure-database-postgresql)
+- [Tutorial: Configure Microsoft Fabric mirrored databases from Azure Database for PostgreSQL flexible server](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/azure-database-postgresql-tutorial)
+- [# Monitor Fabric mirrored database replication](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/monitor)
+
+### Limitations
+
+- Currently, Mirroring doesn't support Azure Database for PostgreSQL flexible server behind an Azure Virtual Network or private networking.
+- You need to update your Azure Database for PostgreSQL flexible server firewall rules to [Allow public network access](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-networking-servers-deployed-public-access-enable-public-access), and enable the [Allow Azure services](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-networking-public#allow-all-azure-ip-addresses) option to connect to your Azure Database for PostgreSQL flexible server.
+- Active transactions continue to hold the write ahead log (WAL) truncation until the transaction commits and the mirrored Azure Database for PostgreSQL flexible server catches up, or the transaction aborts. Long-running transactions might result in the WAL filling up more than usual. WAL on source Azure Database for PostgreSQL flexible server should be monitored so that storage does not fill up.
+- The source Azure Database for PostgreSQL flexible server can be either a **General Purpose** or Memory **Optimized** compute tier. **Burstable** compute tier is not supported as source for mirroring.
+
+## Load Testing
 
 - [Load testing databases with Azure Load Testing](https://techcommunity.microsoft.com/blog/appsonazureblog/load-testing-databases-with-azure-load-testing/3846557)
 - [Define fail criteria for load tests by using Azure Load Testing](https://learn.microsoft.com/en-us/azure/load-testing/how-to-define-test-criteria?tabs=portal#auto-stop-configuration)
