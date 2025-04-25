@@ -1,13 +1,19 @@
 ---
-title: "Load Test 1: Saturating the System"
+title: "Load Test 2: Timed Testing"
 draft: false
 date: 2025-04-17
 tags:
   - Azure
   - PostgreSQL
   - LoadTest
-  - Databases
 ---
+This load tests writes to the main database while reading from the replica.
+
+This load test introduces timers for writing to the main db and reading from the replica db.
+
+I chose 4 writes/second and 20 reads/second.
+
+This causes the replica not to be delayed in any way.
 ## Apache JMeter Script
 
 ```xml
@@ -20,6 +26,8 @@ tags:
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
       <stringProp name="TestPlan.user_define_classpath">C:\Users\sascha\Code\apache-jmeter-5.6.3\lib\postgresql-42.7.5.jar</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -77,7 +85,7 @@ tags:
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="PostgreSQL JDBC Connection Main">
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="PostgreSQL JDBC Connection Main" enabled="true">
         <boolProp name="autocommit">true</boolProp>
         <stringProp name="checkQuery">select 1</stringProp>
         <stringProp name="connectionAge">5000</stringProp>
@@ -96,7 +104,7 @@ tags:
         <stringProp name="username">${mainuser}</stringProp>
       </JDBCDataSource>
       <hashTree/>
-      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration Replica">
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration Replica" enabled="true">
         <stringProp name="dataSource">replica_db</stringProp>
         <stringProp name="poolMax">100</stringProp>
         <stringProp name="timeout">10000</stringProp>
@@ -158,6 +166,15 @@ WHERE name = &apos;Product E&apos;;
           <stringProp name="variableNames"></stringProp>
         </JDBCSampler>
         <hashTree/>
+        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+          <intProp name="calcMode">2</intProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>60.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+        </ConstantThroughputTimer>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group Read ReplicaDb">
         <stringProp name="ThreadGroup.num_threads">${replica_threads}</stringProp>
@@ -186,22 +203,28 @@ ORDER by price DESC
           <stringProp name="resultSetHandler">Store as String</stringProp>
         </JDBCSampler>
         <hashTree/>
+        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+          <doubleProp>
+            <name>throughput</name>
+            <value>240.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="calcMode">2</intProp>
+        </ConstantThroughputTimer>
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
+
 ```
 
 ## Azure Load Test Parameters
 
-![[azure_load_test_3.png]]
+![[azure_loadtest_params.png]]
+
 ## Azure Load Test Result
 
 In App result:
 
-![[azure_load_test_result.png]]
-
-Azure Load Test PostgreSQL Lag:
-
-![[azure_load_test_lag.png]]
-
+![[azure-loadtest-timed.png]]

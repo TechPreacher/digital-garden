@@ -5,7 +5,6 @@ date: 2025-04-08
 tags:
   - Azure
   - PostgreSQL
-  - Databases
 ---
 ## AWS (Block Level Replication)
 

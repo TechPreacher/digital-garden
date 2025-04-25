@@ -5,7 +5,6 @@ date: 2025-04-15
 tags:
   - Azure
   - LoadTest
-  - Databases
 ---
 ## Azure DB for PostgreSQL Configuration
 
