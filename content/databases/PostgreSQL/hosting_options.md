@@ -1,10 +1,11 @@
 ---
-title: "PostgreSQL Hosting Options"
+title: PostgreSQL Hosting Options
 draft: false
-date: "2025-04-08"
+date: 2025-04-08
 tags:
   - Azure
   - PostgreSQL
+  - Databases
 ---
 ## Azure Database for PostgreSQL vs. Azure Cosmos DB for PostgreSQL
 

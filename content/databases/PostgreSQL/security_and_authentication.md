@@ -7,6 +7,7 @@ tags:
   - Azure
   - Security
   - Authentication
+  - Databases
 ---
 This document explores the security and authentication options available when deploying solutions on Azure Kubernetes Service (AKS) that use Azure Database for PostgreSQL Flexible Server as their data layer. As organizations increasingly adopt containerized architectures, securing the database tier becomes essential to maintain data integrity, confidentiality, and availability.
 

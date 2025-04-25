@@ -6,6 +6,7 @@ tags:
   - PostgreSQL
   - Azure
   - Performance
+  - Databases
 ---
 Quote from: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-read-replicas
 

@@ -1,10 +1,11 @@
 ---
-title: "PostgreSQL on Azure"
+title: PostgreSQL on Azure
 draft: false
-date: "2025-04-08"
+date: 2025-04-08
 tags:
   - Azure
   - PostgreSQL
+  - Databases
 ---
 ## PostgreSQL on Azure
 

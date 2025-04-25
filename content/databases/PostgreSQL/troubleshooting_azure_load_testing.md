@@ -6,6 +6,7 @@ tags:
   - Azure
   - PostgreSQL
   - LoadTest
+  - Databases
 ---
 Before diving into the solutions, I'd like to summarize that Azure Load Testing (which I believe is what you're referring to as "Azure Cloud Native Test Runner") evaluates test success differently than standalone JMeter. Your test failures are likely related to either test script compatibility issues or unmet test criteria. Let's explore how to fix this and how to use that Test Run ID for further diagnostics.
 

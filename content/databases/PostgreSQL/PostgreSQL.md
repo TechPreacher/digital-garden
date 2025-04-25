@@ -1,10 +1,11 @@
 ---
-title: "PostgreSQL"
+title: PostgreSQL
 draft: false
-date: "2025-04-08"
+date: 2025-04-08
 tags:
   - Azure
   - PostgreSQL
+  - Databases
 ---
 Here I collect my learnings on running PostgreSQL in Azure.
 
@@ -30,6 +31,8 @@ Here I collect my learnings on running PostgreSQL in Azure.
 - [[load_test_configuration]] - Azure Load Test Configuration
 - [[load_test_1_saturation]] - Load Test 1: Saturating the System
 - [[load_test_2_timed]] - Load Test 2: Timed Testing
+
+- [[azure_loadtest_configuration]] - Configuration I used in Azure Load Test
 
 - [[troubleshooting_azure_load_testing]] - Troubleshooting Failed Tests in Azure Load Testing with JMeter
 
@@ -58,6 +61,11 @@ Here I collect my learnings on running PostgreSQL in Azure.
 - [Load testing databases with Azure Load Testing](https://techcommunity.microsoft.com/blog/appsonazureblog/load-testing-databases-with-azure-load-testing/3846557)
 - [Define fail criteria for load tests by using Azure Load Testing](https://learn.microsoft.com/en-us/azure/load-testing/how-to-define-test-criteria?tabs=portal#auto-stop-configuration)
 - [Use secrets and environment variables in Azure Load Testing](https://learn.microsoft.com/en-us/azure/load-testing/how-to-parameterize-load-tests?wt.mc_id=azloadtesting_techcomm202206_blog_cnl&tabs=jmeter#secrets)
+
+## Azure Load Test Setup using Terraform
+
+- GitHub Repo: https://github.com/TechPreacher/azure_loadtest_terraform
+- Blog Post: https://corti.com/start-load-testing-azure-postgresql-flexible-server-with-read-only-replica-using-azure-load-testing-in-minutes/
 
 ## Aurora Replica Lag
 
