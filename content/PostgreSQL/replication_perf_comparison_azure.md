@@ -6,7 +6,6 @@ tags:
   - Azure
   - PostgreSQL
   - Performance
-  - Databases
 ---
 Microsoft Azure provides multiple managed PostgreSQL solutions, each with distinct replication architectures and performance characteristics. This report compares the replication performance of Azure Database for PostgreSQL Flexible Server and Azure Cosmos DB for PostgreSQL (Hyperscale), focusing on their technical implementations, latency profiles, scalability, and failover capabilities.
 

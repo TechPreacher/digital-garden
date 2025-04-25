@@ -6,7 +6,6 @@ tags:
   - Azure
   - PostgreSQL
   - AWS
-  - Databases
 ---
 Before diving into the specifics of database replication performance, it's important to understand that AWS Aurora PostgreSQL and Azure Database for PostgreSQL Flexible Server represent two different architectural approaches to managed PostgreSQL services, each with unique strengths in handling replication workloads.
 
