@@ -6,6 +6,7 @@ tags:
   - AWS
   - PostgreSQL
   - Replication
+  - Databases
 ---
 "Block Level Replication" in the context of AWS Aurora for PostgreSQL refers to the way Aurora's storage subsystem works: it replicates data at the storage (block) level rather than at the SQL or row level. This is a foundational feature of Aurora and underpins several of its high-availability and durability capabilities.
 

@@ -5,6 +5,7 @@ date: 2025-04-11
 tags:
   - Azure
   - PostgreSQL
+  - Databases
 ---
 ## Outline
 This test was conducted on Azure Database for Postgres Flexible Server with replication in place to see how fast replication works under load.

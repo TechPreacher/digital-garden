@@ -5,6 +5,7 @@ date: 2025-04-23
 tags:
   - Azure
   - LoadTest
+  - Databases
 ---
 ## Configuration of Load Test
 
@@ -24,10 +25,10 @@ Parameters:
   - Environment variables:
     - main_threads: 10
     - main_loops: 100
-    - main_database: jdbc:{postgresql_main}.postgres.database.azure.com:5432/{database}
+    - main_database: jdbc:postgresql://{postgresql_main}.postgres.database.azure.com:5432/{database}
     - replica_threads: 50
     - replica_loops: 500
-    - replica_database: jdbc:{postgresql_replica}.postgres.database.azure.com:5432/{database}
+    - replica_database: jdbc:postgresql;//{postgresql_replica}.postgres.database.azure.com:5432/{database}
     - main_writes_per_minute: 120
     - replica_reads_per_minute: 480
   - Secrets: 
@@ -63,7 +64,7 @@ Test criteria:
 
 Change the keyvault networking to allow access from: Allow public access from all networks.
 
-## Sample  Configurations
+## Sample  Configurations AZ load test
 
 Examples from AI knowledge base:
 

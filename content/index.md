@@ -11,4 +11,13 @@ This is my [Digital Garden](https://www.technologyreview.com/2020/09/03/1007716/
 ![[garden_2.png]]
 
 ## Learning Content
-- [[PostgreSQL]]
+### Databases
+
+- [[PostgreSQL]] - Learnings on running PostgreSQL in Azure.
+
+### Coding
+
+- [[CSharp]] - Learnings on coding in C#.
+- [[Rust]] - Learnings on coding in Rust.
+
+- [[Git]] - Learnings with Git and GitHub.

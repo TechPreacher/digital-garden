@@ -1,10 +1,11 @@
 ---
-title: "Azure Database for PostgreSQL Case Sensitivity"
+title: Azure Database for PostgreSQL Case Sensitivity
 draft: false
-date: "2025-04-08"
+date: 2025-04-08
 tags:
   - Azure
   - PostgreSQL
+  - Databases
 ---
 ## Azure Databaes for PostgreSQL and Case
 
